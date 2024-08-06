@@ -1,0 +1,19 @@
+.header {
+    padding: 20px;
+    background: rgb(11,0,126);
+    background: linear-gradient(90deg, rgba(11,0,126,1) 2%, rgba(19,124,123,1) 76%);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.logoIcon1 {
+    width: 68px;
+}
+
+.logoIcon {
+    width: 50px;
+}

@@ -9,8 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.16.6",
+    "@mui/material": "^5.16.6",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "carousel": "^0.0.3",
+    "next": "14.2.5",
     "react": "^18",
+    "react-carousel": "^4.3.0",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-material-ui-carousel": "^3.4.2",
+    "styled-components": "^6.1.12"
   }
 }

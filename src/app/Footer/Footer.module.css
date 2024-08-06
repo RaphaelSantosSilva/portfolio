@@ -1,0 +1,15 @@
+.footer {
+    border-top: 1px solid white;
+    margin-top: 55px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.links {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: 'Arial';
+    text-decoration: none;
+    color: white;
+}
