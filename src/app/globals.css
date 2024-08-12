@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Helvetica';
     background: rgb(11,0,126);
     background: linear-gradient(90deg, rgba(11,0,126,1) 2%, rgba(19,124,123,1) 76%);
 }

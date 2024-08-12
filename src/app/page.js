@@ -1,19 +1,18 @@
 "use client"
 const { default: Default } = require("./Templates/Default")
-import { Box, Button, Container, Grid, Typography, Icon } from "@mui/material"
+import React from "react"
+import { Box, Container, Grid, Typography } from "@mui/material"
 import style from './page.module.css'
-import Cards from "./Cards/Cards"
-import Carousel from "react-material-ui-carousel"
-import HtmlIcon from '@mui/icons-material/Html'
+import Image from "next/image"
 
-const Home = () => {
+const Home = () => { 
   return (
     <Default>
       <Container maxWidth='md'>
         <Box className={style.box}  component='section' sx={{ flexGrow: 1 }} >
           <Grid container spacing={2} columns={16}>
             <Grid xs={8}>
-              <img className={style.profile} src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"/>
+              <img className={style.profile} src='https://cdn-icons-png.flaticon.com/512/5024/5024509.png'/>
               <div className={style.listIcons}>
                 <img className={style.icons} src="https://cdn-icons-png.flaticon.com/256/174/174854.png"/>
                 <img className={style.icons} src="https://static-00.iconduck.com/assets.00/file-type-css-icon-902x1024-dqy5inwy.png"/>
@@ -53,120 +52,97 @@ const Home = () => {
           Projetos desenvolvidos
         </Typography>
 
-        <Grid container spacing={4}>
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'
-                }
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                icon={HtmlIcon}
+        <div className={style.divPai}>
+          <div className={style.devs}>
+            <h1 className={style.titleDevs}>
+                Barber Shop
+            </h1>
 
-                image2={'https://fontawesome.com/social/code?f=classic&s=&v=5'}
-                
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                } 
-              /> 
-            </Grid>
+            <img 
+              src="https://t4.ftcdn.net/jpg/03/78/83/15/360_F_378831540_10ShB9tnvs2quli24qe53ljhvsL07gjz.jpg" 
+              width={200} 
+              height={200}
+              className={style.imagem1}
+            />
+            
+            <button className={style.button}>
+              <a
+                target="blank" 
+                className={style.ancora} 
+                href="https://github.com/RaphaelSantosSilva/Projeto-Barber-Shop">
+                Acessar
+              </a>
+            </button>
+          </div>
 
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards 
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'}
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                }
-              /> 
-            </Grid> 
+          <div className={style.devs}>
+            <h1 className={style.titleDevs}>
+                To Do List
+            </h1>
 
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards 
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'}
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                }
-              /> 
-            </Grid> 
+            <img 
+              src="https://blog.teamup.com/wp-content/uploads/2021/12/todo-header.png" 
+              width={200} 
+              height={200}
+              className={style.imagem1}
+            />
+            
+            <button className={style.button}>
+              <a
+                target="blank" 
+                className={style.ancora} 
+                href="https://github.com/RaphaelSantosSilva/lista-de-tarefas">
+                Acessar
+              </a>
+            </button>
+          </div>
+        </div>
 
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards 
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'}
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                }
-              /> 
-            </Grid> 
+        <div className={style.divpai2}>
+          <div className={style.devs}>
+            <h1 className={style.titleDevs}>
+                Pet Shop
+            </h1>
 
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards 
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'}
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                }
-              /> 
-            </Grid> 
+            <img 
+              src="https://i.pinimg.com/736x/79/2e/a4/792ea40494b7d47ab0a5692a67123ffc.jpg" 
+              width={200} 
+              height={200}
+              className={style.imagem1}
+            />
+            
+            <button className={style.button}>
+              <a
+                target="blank" 
+                className={style.ancora} 
+                href="https://github.com/RaphaelSantosSilva/Projeto-Pet-Shop">
+                Acessar
+              </a>
+            </button>
+          </div>
 
-            <Grid item xs={12} sm={6} md={4}>
-              <Cards 
-                image={'https://play-lh.googleusercontent.com/EnxJKkoXzxrmA0RA0gUie0K4gvbRLrQhpflyMzwSMvCfk2FA6o9sBLzfWtG5qLzIBIc'}
-                title='Nome do Projeto'
-                subtitle='Descrição'
-                actions={
-                  <>
-                    <Button size="small" color="primary">
-                      Acessar
-                    </Button>
-                    <Button size="small" color="primary">
-                      Código Fonte 
-                    </Button>
-                  </>
-                }
-              /> 
-            </Grid>        
-        </Grid>
+          <div className={style.devs}>
+            <h1 className={style.titleDevs}>
+                Página de Login
+            </h1>
+
+            <img 
+              src="https://media.licdn.com/dms/image/C560BAQGTJDv2cJ7Plw/company-logo_200_200/0/1630643699365/login_logo?e=2147483647&v=beta&t=GEB-hqn_FAJ71E1UXhD9t-3SbzWFPj2LMGqDL-_5RUI" 
+              width={200} 
+              height={200}
+              className={style.imagem1}
+            />
+            
+            <button className={style.button}>
+              <a
+                target="blank" 
+                className={style.ancora} 
+                href="https://github.com/RaphaelSantosSilva/login">
+                Acessar
+              </a>
+            </button>
+          </div>
+        </div>
       </Container>
     </Default>
   )

@@ -10,7 +10,7 @@ const Footer = () => {
                     <Box textAlign='center'>
                         <Link className={style.links} href='#'>
                            <Typography>
-                                Entre em contato comigo
+                                <span className={style.buttonEmail}>Currículo</span>
                            </Typography>
                         </Link>
                     </Box>
@@ -20,7 +20,12 @@ const Footer = () => {
                     <Box textAlign='center'>
                         <Link className={style.links} href='#'>
                            <Typography>
-                                Github
+                                <a  
+                                    className={style.buttonEmail}
+                                    target='blank'
+                                    href='https://github.com/RaphaelSantosSilva'>
+                                        Github
+                                </a>
                            </Typography>
                         </Link>
                     </Box>
@@ -30,7 +35,7 @@ const Footer = () => {
                     <Box textAlign='center'>
                         <Link className={style.links} href='#'>
                            <Typography>
-                                Linkedin
+                                <span className={style.buttonEmail}>Linkedin</span>
                            </Typography>
                         </Link>
                     </Box>
@@ -40,7 +45,7 @@ const Footer = () => {
                     <Box textAlign='center'>
                         <Link className={style.links} href='/publish'>
                             <Typography>
-                                E-mail    
+                                <span className={style.buttonEmail}>E-mail</span>    
                             </Typography>
                         </Link>
                     </Box>

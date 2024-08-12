@@ -49,3 +49,89 @@
     font-family: 'Helvetica';
     color: white;
 }
+
+.divPai {
+    display: flex;
+}
+
+.divpai2 {
+    display: flex;
+}
+
+.devs {
+    position: relative;
+    margin: 10px;
+    width: 100%;
+    height: 320px;
+    background: rgb(255,164,4);
+    background: linear-gradient(90deg, rgba(255,164,4,1) 0%, rgba(124,53,19,1) 100%);
+    color: white;
+    border: 3px solid white;
+    border-radius: 60px;
+}
+
+.imagem {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+}
+
+.icon {
+    display: block;
+    width: 50px;
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    list-style: none;
+}
+
+.titleDevs {
+    font-family: 'Helvetica';
+    margin-top: 13px;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.imagem1 {
+    display: block;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.button {
+    font-family: 'Helvetica';
+    margin-left: 138px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: rgb(11,0,126);
+    background: linear-gradient(90deg, rgba(11,0,126,1) 2%, rgba(19,124,123,1) 76%);
+    font-size: 17px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.ancora {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease;
+    letter-spacing: 2px;
+}
+
+.ancora:hover {
+    color: rgb(255,164,4);
+    color: linear-gradient(90deg, rgba(255,164,4,1) 0%, rgba(124,53,19,1) 100%);
+}
